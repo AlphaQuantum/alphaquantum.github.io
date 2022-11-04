@@ -53,7 +53,7 @@ const fonts = [new FontFace("aBigDeal", "url(fonts/aBigDeal.ttf)"),
     new FontFace("Insanibu", "url(fonts/Insanibu.ttf)"),
     new FontFace("LilitaOne-Regular", "url(fonts/LilitaOne-Regular.ttf)"),
     new FontFace("Matiz", "url(fonts/Matiz.ttf)"),
-    new FontFace("minstrelposterwhg.posternf", "url(fonts/minstrelposterwhg.posternf.ttf)"),
+    //new FontFace("minstrelposterwhg.posternf", "url(fonts/minstrelposterwhg.posternf.ttf)"),
     new FontFace("moon_get-Heavy", "url(fonts/moon_get-Heavy.ttf)"),
     new FontFace("Sniglet-ExtraBold", "url(fonts/Sniglet-ExtraBold.ttf)"),
     new FontFace("theboldfont", "url(fonts/theboldfont.ttf)")];
@@ -67,7 +67,10 @@ for (let i = 0; i < fonts.length; i++) {
         const fontFace = document.createElement("option");
         fontFace.innerHTML = fonts[i].family;
         //console.log(fonts[i].family.text);
-        document.getElementById("fontDropDownInput").appendChild(fontFace);
+        const dropDown = document.getElementById("fontDropDownInput");
+        dropDown.appendChild(fontFace);
+        dropDown.options[i].style.font = "12px " +dropDown.options[i].text;
+        //console.log(dropDown.options[i]);
     })
 } //console.log(font[0].font);
 
