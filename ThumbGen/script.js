@@ -25,6 +25,16 @@ fontDim.value = 110;
 xCoord.value = 640;
 yCoord.value = 130;
 
+//---------------------------------------------------------------------
+document.getElementById("blackGradient").onclick = function () {
+    var grd = canvasCtx.createLinearGradient(640, 0, 640, 300);
+    grd.addColorStop(0, "black");
+    grd.addColorStop(1, "transparent"); 
+
+    // Fill with gradient
+    canvasCtx.fillStyle = grd;
+    canvasCtx.fillRect(0, 0, 1280, 720);
+}
 //Font Selector
 const fonts = [new FontFace("aBigDeal", "url(fonts/aBigDeal.ttf)"),
     new FontFace("AkhirTahun", "url(fonts/aAkhirTahun.ttf)"),
