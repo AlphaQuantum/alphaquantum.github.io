@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en">
 <head>
@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
@@ -20,14 +19,15 @@
                     <div class="col-sm-12">
                         <label for="file">Upload Background:</label>
                         <input name="file" class="col-sm-12" type="file" id="bgInput" aria-label="Insert Background here:">
-                        <div class="col-sm-12 blur">
+                        <button class="col-sm-12" id="blackGradient">Black Gradient</button>
+                        <div class="col-sm-12">
                             <input class="col-sm-1" type="checkbox" id="blurCheck" value="Blur">
                             <label class="col-sm-3">Blur</label>
                             <div class="col-sm-6">
                                 <input type="range" id="blurValue" min="0" max="10" value="7">
                             </div>
                         </div>
-                        <button class="col-sm-12" id="blackGradient">Black Gradient</button>
+                        
                     </div>
                 </div>
 
