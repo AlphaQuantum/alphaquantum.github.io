@@ -1,0 +1,16 @@
+{
+  "idk"{
+    "name": "my-app",
+    "version": "0.1.0",
+    "homepage": "https://gitname.github.io/react-gh-pages",
+    "private": true
+  }
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  },
+  "dependencies": {
+    "install": "^0.13.0",
+    "npm": "^9.2.0",
+    "particles.js": "^2.0.0"
+  }
+}
