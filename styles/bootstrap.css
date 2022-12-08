@@ -4383,6 +4383,11 @@ input[type="button"].btn-block {
   background-clip: border-box;
   border: 2px solid white;
   border-radius: 0.25rem;
+  background-color: #2b2b2b;
+}
+
+.card:hover{
+  box-shadow: 0px 2px 15px rgba(112, 78, 99, 0.733);
 }
 
 .card > hr {
