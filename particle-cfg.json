@@ -8,7 +8,7 @@
         }
       },
       "color": {
-        "value": "#ffffff"
+        "value": [ "#ff5f0c", "#ff3d43", "#ff1685", "#ff089b"]
       },
       "shape": {
         "type": "circle",
@@ -26,7 +26,7 @@
         }
       },
       "opacity": {
-        "value": 0.1,
+        "value": 0.3,
         "random": true,
         "anim": {
           "enable": false,
@@ -54,7 +54,7 @@
       },
       "move": {
         "enable": true,
-        "speed": 12,
+        "speed": 6,
         "direction": "none",
         "random": false,
         "straight": false,
@@ -106,5 +106,5 @@
         }
       }
     },
-    "retina_detect": true
+    "retina_detect": false
   }
