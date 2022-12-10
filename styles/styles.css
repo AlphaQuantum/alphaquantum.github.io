@@ -94,3 +94,8 @@ body {
         width:100%;
     }
 }
+
+.navbar {
+    background-color: #323232da;
+    backdrop-filter: blur(5px);
+}
