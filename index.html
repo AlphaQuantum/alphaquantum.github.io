@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="styles\bootstrap.css">
     <link rel="stylesheet" href="styles\styles.css">
     <link rel="stylesheet" href="styles\bootstrap.css">
-
+    <link rel="icon" href="assets\anassBrand.png">
+    <link rel="apple-touch-icon" href="assets\anassBrand.png">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous"></script>
@@ -22,6 +23,7 @@
     <script src="https://kit.fontawesome.com/f943f60a61.js"
       crossorigin="anonymous"></script>
     <script src="styles\particles.js"></script>
+    <script defer src="styles\main.js"></script>
   </head>
   <body class="text-center">
     <div id="particle-div"
@@ -30,30 +32,13 @@
       <canvas class="particles-js-canvas-el" style="width: 100vw;
         height:100vh;"></canvas>
     </div>
+
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
       <a class="navbar-brand" href="#">
         <img src="assets\anassBrand.png" width="40" height="40" alt="logo">
         AlphaQuantum
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!--Navbar Content Collapse-->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item" hidden><!--Hidden: nothing will be shown-->
-            <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" hidden>Link</a>
-          </li>
-        </ul>
-      </div>
     </nav>
 
     <!--jumbotron-->
@@ -69,7 +54,7 @@
                 transparent; font-weight: 800;" class="typewriter-text">AlphaQuantum!</span><span
                 class="typewriter-cursor"></span>
             </h1>
-            <p class="lead">And this is a simple portfolio i made for fun!</p>
+            <p class="lead hidden-left">And this is a simple portfolio i made for fun!</p>
           </div>
         </div>
       </div>
@@ -77,11 +62,11 @@
 
     <!--Skills-->
     <section class="bg-blur">
-      <div id="skillsCard" class="container-fluid pt-3">
-        <h3>Some of my skills</h3><br>
+      <div id="skillsCard" class="container-fluid pt-3 skills">
+        <h3 class="hidden-left">Some of my skills</h3><br>
         <div class="row card-deck mx-4">
           <div class="col-xs-12 col-md-6 col-xl-4 mb-4">
-            <div class="card" style="border-color:#e33ebe;">
+            <div class="card hidden-left" style="border-color:#e33ebe;">
               <img class="card-img-top rounded mx-auto d-block"
                 src="assets\html.svg" width="50" height="50" alt="html">
               <div class="card-body">
@@ -99,7 +84,7 @@
             </div>
           </div>
           <div class="col-xs-12 col-md-6 col-xl-4 mb-4">
-            <div class="card" style="border-color:#d67f98;">
+            <div class="card hidden-left" style="border-color:#d67f98;">
               <img class="card-img-top rounded mx-auto d-block"
                 src="assets\csharp.svg" width="50" height="50" alt="C#">
               <div class="card-body">
@@ -116,7 +101,7 @@
             </div>
           </div>
           <div class="col-xs-12 col-md-6 col-xl-4 mb-4">
-            <div class="card" style="border-color:#aa53d1;">
+            <div class="card hidden-right" style="border-color:#aa53d1;">
               <img class="card-img-top rounded mx-auto d-block"
                 src="assets\java.svg" width="50" height="50" alt="Java">
               <div class="card-body">
@@ -134,7 +119,7 @@
             </div>
           </div>
           <div class="col-xs-12 col-md-6 col-xl-4 mb-4">
-            <div class="card" style="border-color:#5ec0db;">
+            <div class="card hidden-left" style="border-color:#5ec0db;">
               <img class="card-img-top rounded mx-auto d-block"
                 src="assets\blender.svg" width="50" height="50" alt="Blender">
               <div class="card-body">
@@ -150,7 +135,7 @@
             </div>
           </div>
           <div class="col-xs-12 col-md-6 col-xl-4 mb-4">
-            <div class="card" style="border-color:#b56ed0;">
+            <div class="card hidden-right" style="border-color:#b56ed0;">
               <img class="card-img-top rounded mx-auto d-block"
                 src="assets\video.svg" width="50" height="50" alt="video">
               <div class="card-body">
@@ -165,7 +150,7 @@
             </div>
           </div>
           <div class="col-xs-12 col-md-6 col-xl-4 mb-4">
-            <div class="card" style="border-color:#7c8dda;">
+            <div class="card hidden-right" style="border-color:#7c8dda;">
               <img class="card-img-top rounded mx-auto d-block"
                 src="assets\cisco.svg" width="50" height="50" alt="Networking">
               <div class="card-body">
@@ -190,7 +175,7 @@
         <div class="row align-items-center">
           <!--Carousel-->
           <div id="carouselSlides" class="carousel slide col-xs-12 col-sm-12
-            col-md-6"
+            col-md-6 hidden-left"
             data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#carouselSlides" data-slide-to="0"
@@ -230,18 +215,18 @@
             <a class="carousel-control-prev" href="#carouselSlides"
               role="button"
               data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="carousel-control-prev-icon" aria-hidden-left="true"></span>
               <span class="sr-only">Previous</span>
             </a>
             <a class="carousel-control-next" href="#carouselSlides"
               role="button"
               data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="carousel-control-next-icon" aria-hidden-left="true"></span>
               <span class="sr-only">Next</span>
             </a>
           </div>
 
-          <div class="col-xs-12 col-sm-12 col-md-6 pt-2">
+          <div class="col-xs-12 col-sm-12 col-md-6 pt-2 hidden-right">
             <h3>Rendering Works</h3>
             <div class="d-flex justify-content-center">
               <p id="renderParagraph">This are some of the images i modeled
@@ -261,10 +246,10 @@
     <!--Recent Works-->
     <section class="bg-blur">
       <div class="container p-4">
-        <h3>My Recent Projects</h3>
+        <h3 class="hidden-left">My Recent Projects</h3>
         <div class="row card-deck mb-4 mx-4">
           <div class="col-xs-12 col-md-6 mb-4">
-            <div class="card" style="border:2px solid #fb6787;">
+            <div class="card hidden-left" style="border:2px solid #fb6787;">
               <div class="card-body">
                 <h5 class="card-title">Todo WebApp (React)</h5>
                 <p class="card-text">A simple WebApp built using React
@@ -280,7 +265,7 @@
             </div>
           </div>
           <div class="col-xs-12 col-md-6 mb-4">
-            <div class="card" style="border:2px solid #fb6787;">
+            <div class="card hidden-right" style="border:2px solid #fb6787;">
               <div class="card-body">
                 <h5 class="card-title">Elon Musk Shopping (React)</h5>
                 <p class="card-text">WebApp built using React framework. The
@@ -294,7 +279,7 @@
             </div>
           </div>
           <div class="col-xs-12 col-md-6 mb-4">
-            <div class="card" style="border:2px solid #fb6787;">
+            <div class="card hidden-left" style="border:2px solid #fb6787;">
               <div class="card-body">
                 <h5 class="card-title">Ceaser Cipher (C)</h5>
                 <p class="card-text">Winforms application that helps you speed
@@ -310,7 +295,7 @@
             </div>
           </div>
           <div class="col-xs-12 col-md-6 mb-4">
-            <div class="card" style="border:2px solid #fb6787;">
+            <div class="card hidden-right" style="border:2px solid #fb6787;">
               <div class="card-body">
                 <h5 class="card-title">Substitution Cracker (C#)</h5>
                 <p class="card-text">Winforms application that helps you speed
@@ -357,7 +342,7 @@
 
       <script>
       particlesJS.load('particle-div','particle-cfg.json');
-    </script>
-      <script src="styles\main.js"></script>
+      </script>
+      
     </body>
   </html>
