@@ -7,7 +7,7 @@ Hi there! My name is `Anass`, but in the programming I would prefer to be called
 For this website, I utilized the following technologies:
 + GitHub Pages: I used GitHub Pages to host my website, which allows me to easily publish static content to the web without the need for additional hosting services.
 + Bootstrap: I used Bootstrap as a front-end framework to give my website a responsive and professional look and feel.
-+ JavaScript: I used JavaScript to add interactive features to my website, such as dropdown menus and smooth scrolling.
++ JavaScript: I used JavaScript to add interactive features to my website, such as animations on scroll.
 >I plan to revamp this website using react and tailwind.
 
 ## Last but not least
